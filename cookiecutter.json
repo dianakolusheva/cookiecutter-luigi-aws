@@ -4,6 +4,7 @@
     "github_username": "dianakolusheva",
     "project_name": "New AWS Luigi Project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "repo_name": "{{ cookiecutter.project_slug.replace('_', '-') }}",
     "project_short_description": "A short description of the project",
     "release_date": "{% now 'local' %}",
     "version": "0.1.0",
