@@ -16,7 +16,10 @@ BatchTasks definitions.
 
 3) Generate an example of a project using this template. This template was used
 to generate code for Luigi workflow for automated update and analysis of
-biological models available at ....
+biological models available at https://github.com/dianakolusheva/emmaa/blob/luigi/emmaa/luigi/tasks.py 
+Please note that this example is still work in progress and will be updated in
+the future. It is linked here to demonstrate how a project might look like and
+not to provide an actual working and tested code.
 
 Cookiecutter with extra prompts functionality
 ---------------------------------------------
