@@ -1,11 +1,44 @@
 {
-    "full_name": "Your name",
-    "email": "Your address email (eq. you@example.com)",
-    "github_username": "Your github username",
-    "project_name": "Name of the project",
+    "full_name": "Diana Kolusheva",
+    "email": "dianakolusheva@gmail.com",
+    "github_username": "dianakolusheva",
+    "project_name": "New AWS Luigi Project",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "repo_name": "{{ cookiecutter.project_slug.replace('_', '-') }}",
     "project_short_description": "A short description of the project",
     "release_date": "{% now 'local' %}",
     "version": "0.1.0",
-    "_extensions": ["jinja2_time.TimeExtension"]
+    "_extensions": ["jinja2_time.TimeExtension"],
+    "loop_number_of_external_tasks": {
+        "default": 1,
+        "name_of_external_task_iter": "ExternalTask",
+        "loop_number_of_parameters": {
+            "default": 0,
+            "name_of_parameter_iter" : "param",
+            "type_of_parameter": [
+                "Parameter",
+                "OptionalParameter",
+                "DateParameter",
+                "BoolParameter",
+                "IntParameter",
+                "other"]
+        },
+        "s3_path": "s3://somepath/"
+    },
+    "loop_number_of_batch_jobs": {
+        "default": 1,
+        "name_of_batch_task_iter": "BatchTask",
+        "loop_number_of_parameters": {
+            "default": 0,
+            "name_of_parameter_iter" : "param",
+            "type_of_parameter": [
+                "Parameter",
+                "OptionalParameter",
+                "DateParameter",
+                "BoolParameter",
+                "IntParameter",
+                "other"]
+        },
+        "output_s3_path": "s3://somepath/"
+    }
 }
