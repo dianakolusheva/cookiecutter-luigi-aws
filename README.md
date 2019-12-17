@@ -14,12 +14,12 @@ repo. Flexible design allows to ask user specific questions and generate a big
 portion of a code for Luigi workflow including user sepcific ExternalTasks and
 BatchTasks definitions.
 
-3) Generate an example of a project using this template. This template was used
-to generate code for Luigi workflow for automated update and analysis of
-biological models available at https://github.com/dianakolusheva/emmaa/blob/luigi/emmaa/luigi/tasks.py 
-Please note that this example is still work in progress and will be updated in
-the future. It is linked here to demonstrate how a project might look like and
-not to provide an actual working and tested code.
+3) Generate an example of a project using this template. An example of a project
+generated with template is available is examples directory. This example
+project illustrates Luigi workflow for automated update and analysis of
+biological models. Please note that this example is provided to demonstrate how
+a project generated might look like and is not meant to represent tested and
+deployed code, though the plan is to continue working on it for production.
 
 Cookiecutter with extra prompts functionality
 ---------------------------------------------
